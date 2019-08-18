@@ -1,0 +1,25 @@
+include ../logo/logo
+include ../menu/menu
+include ../search/search
+
+
+
+mixin header()
+    header.header
+        .header__top
+            .container-fluid.px-5.my-3
+                .row.align-items-center
+                    .col-lg-3.col-md-4
+                        header.header__logo
+                              
+                                +logo('assets/images/logo1.svg')
+                              
+                                +logo('assets/images/logo_m.svg')
+                    
+                    .col-lg-18.col-md-17
+                       // span(style='opacity: 0.7')='Название курса в одну строку'
+                       +search()
+
+                    .col-lg-1.offset-lg-2.col-md-1.offset-md-2
+                        +menu()
+                

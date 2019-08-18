@@ -1,0 +1,39 @@
+.header {
+    a.logo{
+        margin-right: 27px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    
+    &__top {
+        border-bottom: 1px solid #d7d7d7;
+    }
+
+    &__bottom {
+        padding: 20px 0 5px;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__btns {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    
+            
+        
+    }
+    
+}

@@ -1,0 +1,66 @@
+//- Используем стандартный шаблон
+extends ../layouts/default/default
+include ../components/block-1/block-1
+include ../components/block-2/block-2
+include ../components/block-3/block-3
+include ../components/block-4/block-4
+include ../components/block-5/block-5
+
+//- Выводим контент
+block content
+    .container-fluid.px-5
+        .my-8
+            h1 Еще больше возможностей
+        hr
+        
+        .my-8
+            h2 Новый дизайн
+        .row.mb-12
+            .col-lg-6.col-md-12
+                +block-1('assets/images/buy-now_banner_galaxy-s10.png','Абсолютно новый Infinity-O экран — на передней стороне смартфона нет ничего, кроме огромного экрана и фронтальной камеры.')
+            .col-lg-6.col-md-12 
+                +block-2('assets/images/Group 13 2.png','Для любителей роскоши, модель S10+ будет выпускаться в керамическом корпусе черного и белого цветов.')
+            .col-lg-6.col-md-12.mt-md-10
+                +block-3('assets/images/colors.svg','Смартфоны доступны в 4х стильных цветах: Перламутр, Аквамарин, Оникс и Цитрус (для S10e).')
+            .col-lg-6.col-md-12.mt-md-10
+               +block-3('assets/images/logo-glass-bg.svg',' В моделях S10 и S10+ установлены защитные стекла нового поколения – Gorilla Glass 6.')
+        hr
+        
+        .mt-8.mb-10
+            h2 Сканер отпечатка в экране
+    .container-fluid.px-5
+        .row.mb-12
+            .col-lg-12.col-md-12.col-sm-24
+                    img(src='assets/images/image 2.png' alt='').block-img
+            .col-lg-12.col-md-12.col-sm-24.mt-lg-0.mt-md-0.mt-sm-6
+                .row
+                    +block-4('assets/images/photo.svg','Отличное качество съемки новых поколениесмартфонов Samsung позволит создать и смотреть праздники, семейные торжества и памятные моменты на огромном экране, с яркими, живыми цветами и прекрасной детализацией.')
+                    +block-4('assets/images/stabili.svg','Дополнительная система стабилизации сделает видеоролики плавными и красивыми.')
+                    +block-4('assets/images/icon.svg','Сверхзамедленная съемка (960 кадров в секунду) теперь в 2 раза дольше. Камера в S10 способна распознать самое стремительное движение, такое как языки пламени, брызги воды, дым из под колес спорткара. ')
+        .mb-8
+            h2 Аксессуары
+
+        .row
+            .col-lg-6.col-md-12.col-sm-24.mb-lg-12.mb-md-10.mb-sm-8
+                +block-2('assets/images/galaxy-s10_accessories_cases.png','Для любителей роскоши, модель S10+ будет выпускаться в керамическом корпусе черного и белого цветов. ')
+            .col-lg-6.col-md-12.col-sm-24.mb-lg-12.mb-md-10.mb-sm-8
+                +block-2('assets/images/galaxy-s10_accessories_power.png','Для любителей роскоши, модель S10+ будет выпускаться в керамическом корпусе черного и белого цветов.')
+            .col-lg-6.col-md-12.col-sm-12.mb-lg-12.mb-md-10.mb-sm-8
+                +block-5('Galaxy S10+ в режиме Dex поддерживает широкоформатные мониторы. Мощный смартфон превращается в мощный десктоп.')
+            .col-lg-6.col-md-12.col-sm-12.mb-lg-12.mb-md-10.mb-sm-8
+                +block-5('Смартфон S10 сразу укомплектован защитной пленкой.')  
+        .mt-2   
+            hr
+        .my-10
+            h2 Приложения и сервисы Samsung
+        .row
+            .col-lg-8.col-md-8.mb-md-8.col-sm-24.mb-sm-6
+                +block-3('assets/images/smart_switch.svg','Благодаря приложению Smart Switch можно перенести информацию со старого смартфона на новый. ')
+            .col-lg-8.col-md-8.col-sm-24.mb-md-8.mb-sm-6
+                +block-3('assets/images/samsung_health.svg',' Приложение Samsung Health помогает контролировать физическую активность и вести дневник питания.')
+            .col-lg-8.col-md-8.col-sm-24.mb-md-8.mb-sm-6
+                +block-3('assets/images/bixby.svg','Интеллектуальный помощник Bixby обеспечит быстрый доступ к переводчику, поиску в Интернете, покупкам и многому другому.')
+            .col-lg-8.col-md-8.col-sm-24.mb-md-8.mb-sm-6
+                +block-3('assets/images/samsung_pay.svg','Приложение Samsung Pay дает возможность оплачивать свои покупки при помощи смартфона.')
+            .col-lg-8.col-md-8.col-sm-24.mb-md-8.mb-sm-6
+                +block-3('assets/images/SmartThings.svg','Благодаря приложению Smart Things можно управлять всеми смарт-устройствами дома.')

@@ -1,0 +1,5 @@
+include ../input-text/input-text
+
+mixin search()
+    form(action='' class='search')
+        +input-text()(name='search-input' value='' placeholder='Название курса в одну строку')

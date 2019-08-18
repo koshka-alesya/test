@@ -1,0 +1,28 @@
+.block-4{
+    display:flex;
+    justify-content: middle;
+    align-items:center;
+    padding-bottom: 60px;
+    /*&__img{
+        width: 100%;
+        height: 100%;
+         object-fit: contain;
+         //object-position: center;
+        max-width: 60px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }*/
+
+    /*&__img{
+        position: absolute;
+        top:50%;
+        transform: translate(0, -50%);
+        margin: 0;
+    }*/
+
+    &__img{
+        margin:0 41px;
+    }
+
+}

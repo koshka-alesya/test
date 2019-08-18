@@ -1,0 +1,23 @@
+.block-2{
+    
+
+    &__img{
+        width: auto;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom:20px;   
+    }
+
+    &__text{
+        line-height: 24px;
+
+    }
+
+    &__hr{
+        margin:0;
+        padding:0;
+        margin-bottom:20px;
+    }
+}
